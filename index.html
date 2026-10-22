@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تسجيل حساب المدرسة - برنامج أثر</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #f5f7fa 0%, #e4ecf7 100%);
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .clickable-image {
+      display: inline-block;
+      cursor: pointer;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      max-width: 100%;
+    }
+
+    .clickable-image:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    }
+
+    .clickable-image:active {
+      transform: translateY(0) scale(1);
+    }
+
+    .clickable-image img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .hint {
+      margin-top: 20px;
+      color: #555;
+      font-size: 1.1rem;
+    }
+
+    .hint::after {
+      content: " 👆";
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- رابط النموذج + الصورة القابلة للنقر -->
+    <a 
+      href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=OebKLaTUVESCx1kqtm_HvQHcEqQiAbBPi_U-kRfE8WFUQk5EUUZXUFVUODFNQkdXTzJLVFdXTUU5Ry4u"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="clickable-image"
+      aria-label="انقر لفتح نموذج تسجيل المدرسة"
+    >
+      <img src="presentation.png" alt="انقر هنا لفتح نموذج تسجيل حساب المدرسة في برنامج أثر">
+    </a>
+
+    <p class="hint">انقر على الصورة لفتح النموذج</p>
+  </div>
+</body>
+</html>
